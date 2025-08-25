@@ -149,20 +149,3 @@ docker-compose logs prometheus
 docker-compose logs grafana
 docker-compose logs alertmanager
 ```
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgments
-
-- Prometheus team for the monitoring system
-- Grafana team for the visualization platform
-- Docker team for containerization technology
