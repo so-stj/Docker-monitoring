@@ -149,20 +149,3 @@ docker-compose logs prometheus
 docker-compose logs grafana
 docker-compose logs alertmanager
 ```
-
-## 🤝 貢献
-
-1. リポジトリをフォーク
-2. 機能ブランチを作成
-3. 変更を加える
-4. プルリクエストを送信
-
-## 📄 ライセンス
-
-このプロジェクトはMITライセンスの下でライセンスされています - 詳細はLICENSEファイルを参照してください。
-
-## 🙏 謝辞
-
-- モニタリングシステムのPrometheusチーム
-- 可視化プラットフォームのGrafanaチーム
-- コンテナ化技術のDockerチーム
