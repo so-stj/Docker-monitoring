@@ -1,0 +1,11 @@
+group:
+- name: exmple
+  rules:
+  - alert: instance_down
+    expr: up == 0
+    for: 5m
+    labels:
+      severity: critical
+    annotations:
+      summary: "Instance {{ $labels.instance }} down"
+      description: "Instance {{ $labels.instance }} has been down for more than 5 minutes."
