@@ -2,7 +2,7 @@
 
 A comprehensive Docker-based monitoring solution using Prometheus, Grafana, Alertmanager, and Node Exporter for system monitoring and alerting.
 
-## 🚀 Overview
+## Overview
 
 This project provides a complete monitoring stack that includes:
 - **Prometheus**: Time-series database for metrics collection
@@ -10,14 +10,14 @@ This project provides a complete monitoring stack that includes:
 - **Alertmanager**: Alert routing and notification management
 - **Node Exporter**: System metrics exporter for Prometheus
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Docker
 - Docker Compose
 - At least 2GB of available RAM
 - Ports 3000, 9090, 9093, and 9100 available
 
-## 🛠️ Installation & Setup
+## Installation & Setup
 
 1. **Clone the repository**
    ```bash
@@ -37,7 +37,7 @@ This project provides a complete monitoring stack that includes:
    docker-compose up -d
    ```
 
-## 🌐 Access Points
+## Access Points
 
 Once the stack is running, you can access the following services:
 
@@ -48,7 +48,7 @@ Once the stack is running, you can access the following services:
 | **Alertmanager** | http://localhost:9093 | None |
 | **Node Exporter** | http://localhost:9100 | None |
 
-## 📊 Configuration
+## Configuration
 
 ### Prometheus Configuration
 - **Scrape Interval**: 15 seconds
@@ -65,7 +65,7 @@ The system includes basic alert rules for:
 - Route configuration for alert distribution
 - Channel: #alerts
 
-## 🔧 Customization
+## Customization
 
 ### Adding New Targets
 To monitor additional services, edit `prometheus/prometheus.yaml`:
@@ -90,7 +90,7 @@ Add new alert rules in `prometheus/alert.rules.yaml`:
     description: "Detailed description"
 ```
 
-## 📈 Getting Started with Grafana
+## Getting Started with Grafana
 
 1. Access Grafana at http://localhost:3000
 2. Login with admin/admin
@@ -99,7 +99,7 @@ Add new alert rules in `prometheus/alert.rules.yaml`:
    - Access: Server (default)
 4. Import dashboards or create your own
 
-## 🚨 Alerting
+## Alerting
 
 The system is configured to send alerts to Slack when:
 - Instances go down for more than 5 minutes
@@ -110,7 +110,7 @@ To configure Slack notifications:
 2. Update `alertmanager/config.yaml`
 3. Restart the alertmanager service
 
-## 🛑 Stopping the Stack
+## Stopping the Stack
 
 ```bash
 docker-compose down
@@ -121,7 +121,7 @@ To remove all data:
 docker-compose down -v
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Docker-monitoring/
@@ -134,7 +134,7 @@ Docker-monitoring/
 └── README.md                   # This file
 ```
 
-## 🔍 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
